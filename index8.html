@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Yash!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6e6fa; /* Lavender background */
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff4500; /* OrangeRed */
+            font-size: 4em;
+            margin-top: 50px;
+        }
+        p {
+            color: #2e8b57; /* SeaGreen */
+            font-size: 1.5em;
+        }
+        .hello-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .hello-item {
+            width: 150px;
+            height: 100px;
+            background-color: #ff69b4; /* Hot Pink color */
+            border-radius: 50% / 30%; /* Oval shape */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000;
+            animation: float 4s ease-in-out infinite;
+        }
+        .hello-item:nth-child(2) {
+            background-color: #87ceeb; /* Sky Blue color */
+            animation-delay: 1s;
+        }
+        .hello-item:nth-child(3) {
+            background-color: #8b0000; /* Dark Red color */
+            animation-delay: 2s;
+        }
+        .hello-item::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            width: 2px;
+            height: 40px;
+            background-color: #000;
+            transform: translateX(-50%);
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-25px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎊Happy Independence Day!</h1>
+    <p>Wishing you a day filled with love, joy, and all your favorite things!</p>
+    <div class="hello-container">
+        <div class="hello-item">Happy</div>
+        <div class="hello-item">Birthday</div>
+        <div class="hello-item">Kanju</div>
+    </div>
+    <script>
+        // JavaScript can be added here for additional interactivity if needed
+    </script>
+</body>
+</html>
